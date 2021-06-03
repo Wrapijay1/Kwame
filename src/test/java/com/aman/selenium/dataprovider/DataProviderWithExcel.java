@@ -18,7 +18,6 @@ public class DataProviderWithExcel {
 		
 		System.out.println("Enter User" +" "+map.get("userName"));
 		System.out.println("Enter password"+" "+map.get("password"));
-		System.out.println("Login");
 	}
 
 	@DataProvider
