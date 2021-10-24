@@ -1,6 +1,8 @@
 package com.aman.selenium.tests;
 
-import static org.assertj.core.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
+
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.aman.selenium.enums.ConfigProperties;
@@ -9,8 +11,10 @@ import com.aman.selenium.utils.PropertyUtils;
 
 public class OrangeHRMTest extends BaseTest{
 	
+	@Parameters("Browser")
 	@Test
-	public  void loginLogout() throws Exception {
+	public  void loginLogout(String browserName) throws Exception {
+		System.out.println("Parameter value is "+browserName);
 		String title =OrangeHRMLoginPage
 		.enterUser(PropertyUtils.get(ConfigProperties.USER)).enterPassword(PropertyUtils.get(ConfigProperties.PASSWORD)).clickLogin()
 		.clickWelcome().clickLogout()
