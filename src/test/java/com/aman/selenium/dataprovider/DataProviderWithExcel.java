@@ -33,7 +33,7 @@ public class DataProviderWithExcel {
 		Object[] data = new Object[rnum] ;
 
 		for (int i=1; i<=rnum; i++) {
-			map = new HashMap<>();
+			map = new HashMap<String, String>();
 			for (int j=0; j<cnum;j++) {
 				String key = sheet.getRow(0).getCell(j).getStringCellValue();
 				String value= sheet.getRow(i).getCell(j).getStringCellValue();

@@ -26,13 +26,13 @@ public class EnumRunner {
 		}
 		
 		// alternative way to achieve line 21-24
-		Arrays.asList(Severity.values()).forEach(System.out::println);
-		
-		Map<Severity , String> map = new EnumMap<>(Severity.class) ;
-		map.put(Severity.HIGH, "high");
-		map.put(Severity.CRITICAL, "critical");
-		
-		map.forEach((k,v) -> System.out.println(k));
+//		Arrays.asList(Severity.values()).forEach(System.out::println);
+//		
+//		Map<Severity , String> map = new EnumMap<>(Severity.class) ;
+//		map.put(Severity.HIGH, "high");
+//		map.put(Severity.CRITICAL, "critical");
+//		
+//		map.forEach((k,v) -> System.out.println(k));
 	}
 
 }
